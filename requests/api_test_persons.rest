@@ -1,5 +1,27 @@
-GET http://localhost:3001/api/persons
+GET http://localhost:3001/api/persons/63e98bcd09db52ffa0f786df
 
 ###
 DELETE http://localhost:3001/api/persons/2
 
+###
+POST http://localhost:3001/api/persons 
+Content-Type: application/json
+
+{
+    "name": "QA test VSCode", 
+    "number": "11-123-1343243"
+}
+
+### 
+PUT http://localhost:3001/api/persons/63ebc06f07a1cc4993f94bd7
+Content-Type: application/json
+
+{
+    "number": "00-111-222-3333"
+}
+
+###
+GET http://localhost:3001/api/persons/63e98c444bac82deb00c46d5
+
+###
+GET http://localhost:3001/info
